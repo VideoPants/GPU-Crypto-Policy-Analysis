@@ -1,0 +1,49 @@
+{
+  "Original Features": [
+    "BTC_Price",
+    "BTC_Volume",
+    "ETH_Price",
+    "ETH_Volume",
+    "NVDA_Close",
+    "NVDA_Volume",
+    "AMD_Close",
+    "AMD_Volume",
+    "INTC_Close",
+    "INTC_Volume",
+    "GPU_Stock_Index"
+  ],
+  "Gov/Military Features": [
+    "Regulatory_Event_Flag",
+    "Military_Spending_Flag",
+    "Regulatory_Stringency_Index",
+    "Defense_AI_Budget_Billions",
+    "Global_Regulatory_Index",
+    "Cybersecurity_Threat_Level"
+  ],
+  "Technical Indicators": [
+    "BTC_MA_7",
+    "BTC_MA_30",
+    "ETH_MA_7",
+    "GPU_MA_7",
+    "BTC_Momentum",
+    "ETH_Momentum",
+    "GPU_Momentum",
+    "NVDA_Momentum",
+    "BTC_Volatility",
+    "GPU_Volatility",
+    "BTC_Price_Lag1",
+    "ETH_Price_Lag1",
+    "GPU_Price_Lag1",
+    "BTC_Volume_MA",
+    "BTC_to_GPU_Ratio",
+    "ETH_to_GPU_Ratio"
+  ],
+  "Interaction Features": [
+    "Gov_Crypto_Interaction",
+    "Military_GPU_Demand",
+    "Reg_Stringency_GPU_Impact"
+  ],
+  "Categorical": [
+    "GPU_Price_Category"
+  ]
+}
