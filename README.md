@@ -43,31 +43,6 @@ Using a **Knowledge Discovery in Databases (KDD)** approach, we integrated real-
 
 ---
 
-## 🛠️ How to Run
-
-1.  **Clone the repo:**
-
-    ```bash
-    git clone https://github.com/YOUR_USERNAME/GPU-Crypto-Policy-Nexus.git
-    cd GPU-Crypto-Policy-Nexus
-    ```
-
-2.  **Install dependencies:**
-
-    ```bash
-    pip install pandas numpy yfinance scikit-learn
-    ```
-
-3.  **Run the full pipeline:**
-    ```bash
-    python code/01_collect_real_crypto_gpu_data.py
-    python code/02_collect_real_gov_military_data.py
-    python code/03_integrate_real_data.py
-    python code/04_preprocessing_real_data.py
-    ```
-
----
-
 ## 📊 Data Sources
 
 - **Cryptocurrency:** Bitcoin (BTC), Ethereum (ETH) via `yfinance`.
@@ -76,8 +51,6 @@ Using a **Knowledge Discovery in Databases (KDD)** approach, we integrated real-
 - **Military:** Defense AI Budget Authority & Geopolitical Conflict Events.
 
 ---
-
-## 👥 Team Role: Data Architect & Engineer
 
 This repository represents the **Data Architect** phase of the project:
 
