@@ -1,4 +1,4 @@
-# GPU-Crypto-Policy-Nexus 📉🏛️
+# GPU-Crypto-Policy-Analysis 📉🏛️
 
 **Analyzing the Hidden Drivers of GPU Prices: Cryptocurrency, Government Regulation, and Military Defense Spending.**
 
