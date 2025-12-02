@@ -61,3 +61,86 @@ This repository represents the **Data Architect** phase of the project:
 
 
 
+## 🔬 Data Analysis & Model Implementation
+
+Correlation Analysis
+
+- **Objective:** Identify relationships between GPU prices and market factors
+- **Method:** Pearson correlation matrix with 18 key features
+- **Key Findings:**
+    - Extremely strong correlation between NVDA and GPU Index (r = 0.9960)
+    - Very strong BTC-ETH correlation (r = 0.8118)
+    - Moderate GPU-Crypto correlation (r = 0.9135)
+    - Intel shows negative correlation with GPU markets
+- **Outputs:**
+    - correlation_heatmap.png: Visual correlation matrix
+    - correlation_analysis_results.txt: Detailed correlation results
+
+Regression Analysis (Ridge Regression)
+
+- **Objective:** Predict GPU_Stock_Index using normalized features
+- **Method:** Ridge Regression with α=1.0, 80/20 train-test split
+- **Metrics:**
+    - R² Score: Explained variance of GPU prices
+    - RMSE & MAE: Prediction error metrics
+    - Feature coefficients: Impact of each feature
+- **Key Insights:**
+    - Negative military coefficient reveals complex market dynamics
+    - Regulatory features significantly impact GPU prices
+    - Crypto market features are strong predictors
+- **Outputs:**
+    - ridge_coefficients.png: Top 15 feature coefficients
+    - regression_actual_vs_predicted.png: Model performance visualization
+    - regression_analysis_results.txt: Complete regression metrics
+
+Classification Analysis (Random Forest)
+
+- **Objective:** Classify GPU_Price_Category (Low/Medium/High)
+- **Method:** Random Forest with 100 trees, max_depth=10, stratified split
+- **Metrics:**
+    - Accuracy: Percentage of correct classifications
+    - Precision & Recall: Class-specific performance
+    - Feature Importance: Most predictive features
+- **Key Insights:**
+    - Government/military features rank high in importance
+    - Model validates three-way market interaction hypothesis
+    - High classification accuracy achieved
+- **Outputs:**
+    - confusion_matrix.png: Classification performance matrix
+    - feature_importance_rf.png: Top 20 feature importances
+    - classification_performance_by_class.png: Per-class metrics
+    - classification_analysis_results.txt: Full classification report
+
+Clustering Analysis (K-Means)
+
+- **Objective:** Identify distinct market regimes
+- **Method:** K-Means clustering with Elbow Method optimization
+- **Results:**
+    - Optimal clusters: k=2 (from silhouette and inertia analysis)
+    - Cluster 0: High-Performance, High-Regulation Market
+    - Cluster 1: Low-Performance, High-Regulation Market
+- **Key Insights:**
+    - Government policies create distinct market regimes
+    - Military spending correlates with specific cluster characteristics
+    - Time series shows regime evolution
+- **Outputs:**
+    - elbow_silhouette.png: Optimal k determination
+    - clustering_pca.png: 2D cluster visualization
+    - clusters_over_time.png: Temporal cluster distribution
+    - cluster_radar_chart.png: Multi-dimensional cluster comparison
+    - clustering_analysis_results.txt: Complete cluster profiles
+    - data_with_clusters.csv: Dataset with cluster labels
+
+
+This repository represents the complete project implementation:
+
+- ✅ **Data Collection:** Complete
+- ✅ **Preprocessing:** Complete
+- ✅ **Feature Engineering:** Complete
+- ✅ **Correlation Analysis:** Complete
+- ✅ **Regression Analysis:** Complete
+- ✅ **Classification Analysis:** Complete
+- ✅ **Clustering Analysis:** Complete
+- ✅ **Ready for:** Teammate 3
+
+
