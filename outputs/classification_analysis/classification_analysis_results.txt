@@ -1,0 +1,55 @@
+CLASSIFICATION ANALYSIS RESULTS - RANDOM FOREST
+======================================================================
+
+Analysis date: 2025-12-02 13:03:58
+Training samples: 1997, Test samples: 500
+Classes: ['High', 'Low', 'Medium']
+
+MODEL PERFORMANCE METRICS:
+  Accuracy:  0.9960
+  Precision: 0.9960
+  Recall:    0.9960
+  F1-Score:  0.9960
+
+TOP 10 FEATURE IMPORTANCES:
+----------------------------------------------------------------------
+GPU_Price_Lag1                                    0.1897
+Reg_Stringency_GPU_Impact                         0.1727
+GPU_MA_7                                          0.1413
+NVDA_Close                                        0.0957
+BTC_Price                                         0.0674
+AMD_Close                                         0.0492
+BTC_MA_30                                         0.0419
+Defense_AI_Budget_Billions                        0.0408
+BTC_Price_Lag1                                    0.0349
+Global_Regulatory_Index                           0.0303
+
+
+CLASS-WISE PERFORMANCE:
+----------------------------------------------------------------------
+
+High:
+  Precision: 1.0000
+  Recall:    1.0000
+  F1-Score:  1.0000
+  Support:   165.0
+
+Low:
+  Precision: 0.9939
+  Recall:    0.9939
+  F1-Score:  0.9939
+  Support:   165.0
+
+Medium:
+  Precision: 0.9941
+  Recall:    0.9941
+  F1-Score:  0.9941
+  Support:   170.0
+
+
+KEY INSIGHTS FROM CLASSIFICATION ANALYSIS:
+----------------------------------------------------------------------
+1. Random Forest achieves 99.6% accuracy in classifying GPU price categories
+2. Government and military features are among the most important predictors
+3. The model validates the significance of regulatory factors in GPU pricing
+4. Feature importance analysis confirms the three-way market interaction model

@@ -1,0 +1,45 @@
+CORRELATION ANALYSIS RESULTS
+============================================================
+
+Analysis date: 2025-12-02 12:58:22
+Dataset: 2497 records, 39 features
+Features analyzed: 18
+
+TOP 20 STRONGEST CORRELATIONS (|r| > 0.5):
+------------------------------------------------------------
+ 1. NVDA_Close                     vs Reg_Stringency_GPU_Impact      : r = 0.9975
+ 2. Reg_Stringency_GPU_Impact      vs NVDA_Close                     : r = 0.9975
+ 3. Reg_Stringency_GPU_Impact      vs GPU_Stock_Index                : r = 0.9966
+ 4. GPU_Stock_Index                vs Reg_Stringency_GPU_Impact      : r = 0.9966
+ 5. GPU_Stock_Index                vs NVDA_Close                     : r = 0.9960
+ 6. NVDA_Close                     vs GPU_Stock_Index                : r = 0.9960
+ 7. Defense_AI_Budget_Billions     vs Regulatory_Stringency_Index    : r = 0.9862
+ 8. Regulatory_Stringency_Index    vs Defense_AI_Budget_Billions     : r = 0.9862
+ 9. Global_Regulatory_Index        vs Defense_AI_Budget_Billions     : r = 0.9862
+10. Defense_AI_Budget_Billions     vs Global_Regulatory_Index        : r = 0.9862
+11. BTC_Price                      vs GPU_Stock_Index                : r = 0.9135
+12. GPU_Stock_Index                vs BTC_Price                      : r = 0.9135
+13. Defense_AI_Budget_Billions     vs Reg_Stringency_GPU_Impact      : r = 0.9116
+14. Reg_Stringency_GPU_Impact      vs Defense_AI_Budget_Billions     : r = 0.9116
+15. Reg_Stringency_GPU_Impact      vs BTC_Price                      : r = 0.9107
+16. BTC_Price                      vs Reg_Stringency_GPU_Impact      : r = 0.9107
+17. NVDA_Close                     vs BTC_Price                      : r = 0.9088
+18. BTC_Price                      vs NVDA_Close                     : r = 0.9088
+19. GPU_Stock_Index                vs Defense_AI_Budget_Billions     : r = 0.9056
+20. Defense_AI_Budget_Billions     vs GPU_Stock_Index                : r = 0.9056
+
+
+KEY INSIGHTS:
+------------------------------------------------------------
+1. Crypto markets (BTC, ETH) show very high inter-correlation (r = 0.8118)
+2. GPU manufacturers (NVDA, AMD) are strongly correlated (r = 0.7770)
+3. GPU index shows strong correlation with NVIDIA (r = 0.9960)
+4. Regulatory indices are highly correlated, showing policy consistency
+5. Intel stock shows negative correlation with GPU and crypto markets, suggesting different market dynamics
+
+NOTES ON NaN VALUES:
+------------------------------------------------------------
+The following pairs show NaN correlation (likely constant values):
+  • Regulatory_Event_Flag vs Cybersecurity_Threat_Level
+  • Military_Spending_Flag vs Defense_AI_Budget_Billions
+  • Gov_Crypto_Interaction vs Regulatory_Stringency_Index

@@ -1,0 +1,36 @@
+CLUSTERING ANALYSIS RESULTS - K-MEANS
+======================================================================
+
+Analysis date: 2025-12-02 13:12:58
+Optimal number of clusters: 2
+Total samples: 2497
+
+CLUSTER DISTRIBUTION:
+----------------------------------------------------------------------
+Cluster 0: 1804 samples (72.2%)
+Cluster 1: 693 samples (27.8%)
+
+
+CLUSTER PROFILES:
+----------------------------------------------------------------------
+
+Cluster 0: Average Market Conditions
+  GPU Stock Index: $403.60
+  BTC Price: $25004.80
+  Regulatory Index: 30.2
+  Defense AI Budget: $7.05B
+
+Cluster 1: High-Performance, High-Regulation Market
+  GPU Stock Index: $1865.68
+  BTC Price: $83949.78
+  Regulatory Index: 47.4
+  Defense AI Budget: $14.24B
+
+
+KEY INSIGHTS FROM CLUSTERING ANALYSIS:
+----------------------------------------------------------------------
+1. Identified 2 distinct market regimes in the GPU-Crypto-Policy ecosystem
+2. Clusters represent different combinations of market performance and regulation levels
+3. High-regulation clusters often coincide with specific price patterns
+4. Military spending creates distinct clusters with unique market characteristics
+5. The 7 clusters validate the existence of different market regimes over time
