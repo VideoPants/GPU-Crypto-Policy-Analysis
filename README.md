@@ -59,11 +59,11 @@ This repository represents the **Data Architect** phase of the project:
 - ✅ **Feature Engineering:** Complete
 - ✅ **Data Mining & Analysis:** Complete
 
-
+---
 
 ## 🔬 Data Analysis & Model Implementation
 
-Correlation Analysis
+**Correlation Analysis**
 
 - **Objective:** Identify relationships between GPU prices and market factors
 - **Method:** Pearson correlation matrix with 18 key features
@@ -76,7 +76,7 @@ Correlation Analysis
     - correlation_heatmap.png: Visual correlation matrix
     - correlation_analysis_results.txt: Detailed correlation results
 
-Regression Analysis (Ridge Regression)
+**Regression Analysis (Ridge Regression)**
 
 - **Objective:** Predict GPU_Stock_Index using normalized features
 - **Method:** Ridge Regression with α=1.0, 80/20 train-test split
@@ -93,7 +93,7 @@ Regression Analysis (Ridge Regression)
     - regression_actual_vs_predicted.png: Model performance visualization
     - regression_analysis_results.txt: Complete regression metrics
 
-Classification Analysis (Random Forest)
+**Classification Analysis (Random Forest)**
 
 - **Objective:** Classify GPU_Price_Category (Low/Medium/High)
 - **Method:** Random Forest with 100 trees, max_depth=10, stratified split
@@ -111,7 +111,7 @@ Classification Analysis (Random Forest)
     - classification_performance_by_class.png: Per-class metrics
     - classification_analysis_results.txt: Full classification report
 
-Clustering Analysis (K-Means)
+**Clustering Analysis (K-Means)**
 
 - **Objective:** Identify distinct market regimes
 - **Method:** K-Means clustering with Elbow Method optimization
@@ -131,6 +131,7 @@ Clustering Analysis (K-Means)
     - clustering_analysis_results.txt: Complete cluster profiles
     - data_with_clusters.csv: Dataset with cluster labels
 
+---
 
 This repository represents the complete project implementation:
 
