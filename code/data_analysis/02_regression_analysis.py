@@ -38,7 +38,7 @@ overall_start = time.time()
 
 # Load normalized data
 step_start = log_step("Loading normalized data")
-df = pd.read_csv('data\processed\data_machinelearning_clustering.csv')
+df = pd.read_csv('data/processed/data_machinelearning_clustering.csv')
 df['Date'] = pd.to_datetime(df['Date'])
 log_result(f"Data loaded: {df.shape[0]} rows, {df.shape[1]} columns")
 log_step("Loading normalized data", step_start)
@@ -148,7 +148,7 @@ for bar in bars:
              fontsize=9)
 
 plt.tight_layout()
-plt.savefig('outputs\Regression_analysis\Ridge_coefficients.png', dpi=300, bbox_inches='tight')
+plt.savefig('outputs/Regression_analysis/Ridge_coefficients.png', dpi=300, bbox_inches='tight')
 plt.close()
 log_result("Coefficient plot saved to outputs/ridge_coefficients.png")
 log_step("Visualizing coefficients", step_start)
@@ -172,14 +172,14 @@ plt.title(f'Ridge Regression: Actual vs Predicted (R² = {r2:.4f})', fontsize=14
 plt.legend()
 plt.grid(True, alpha=0.3)
 plt.tight_layout()
-plt.savefig('outputs/regression_actual_vs_predicted.png', dpi=300, bbox_inches='tight')
+plt.savefig('outputs/Regression_analysis/regression_actual_vs_predicted.png', dpi=300, bbox_inches='tight')
 plt.close()
 log_result("Actual vs predicted plot saved to outputs/regression_actual_vs_predicted.png")
 log_step("Creating actual vs predicted plot", step_start)
 
 # Save results
 step_start = log_step("Saving regression results")
-with open('outputs\Regression_analysis\Regression_analysis_results.txt', 'w') as f:
+with open('outputs/Regression_analysis/Regression_analysis_results.txt', 'w') as f:
     f.write("REGRESSION ANALYSIS RESULTS - RIDGE REGRESSION\n")
     f.write("="*70 + "\n\n")
     f.write(f"Analysis date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")

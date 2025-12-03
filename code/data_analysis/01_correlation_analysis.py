@@ -35,7 +35,7 @@ overall_start = time.time()
 
 # Load data
 step_start = log_step("Loading data")
-df = pd.read_csv('data\processed\data_visualization_analysis.csv')  # Fixed: forward slashes
+df = pd.read_csv('data/processed/data_visualization_analysis.csv')
 df['Date'] = pd.to_datetime(df['Date'])
 log_result(f"Data loaded: {df.shape[0]} rows, {df.shape[1]} columns")
 log_step("Loading data", step_start)
@@ -69,7 +69,7 @@ sns.heatmap(correlation_matrix, mask=mask, annot=True, fmt='.2f',
             cbar_kws={"shrink": 0.8})
 plt.title('Correlation Matrix of Key Features', fontsize=16, fontweight='bold')
 plt.tight_layout()
-plt.savefig('outputs\correlation_analysis\correlation_heatmap.png', dpi=300, bbox_inches='tight')
+plt.savefig('outputs/correlation_analysis/correlation_heatmap.png', dpi=300, bbox_inches='tight')
 plt.close()
 log_result("Heatmap saved to outputs/correlation_heatmap.png")
 log_step("Generating correlation heatmap", step_start)
@@ -145,7 +145,7 @@ log_step("Providing correlation interpretations", step_start)
 step_start = log_step("Saving correlation results")
 try:
     # Use UTF-8 encoding to handle special characters
-    with open('outputs\correlation_analysis\correlation_analysis_results.txt', 'w', encoding='utf-8') as f:
+    with open('outputs/correlation_analysis/correlation_analysis_results.txt', 'w', encoding='utf-8') as f:
         f.write("CORRELATION ANALYSIS RESULTS\n")
         f.write("="*60 + "\n\n")
         f.write(f"Analysis date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")

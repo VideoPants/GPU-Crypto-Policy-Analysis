@@ -40,7 +40,7 @@ overall_start = time.time()
 
 # Load normalized data
 step_start = log_step("Loading normalized data")
-df = pd.read_csv('data\processed\data_machinelearning_clustering.csv')
+df = pd.read_csv('data/processed/data_machinelearning_clustering.csv')
 df['Date'] = pd.to_datetime(df['Date'])
 log_result(f"Data loaded: {df.shape[0]} rows, {df.shape[1]} columns")
 log_step("Loading normalized data", step_start)
@@ -122,7 +122,7 @@ plt.xlabel('Predicted Label', fontsize=12)
 plt.ylabel('True Label', fontsize=12)
 plt.title('Confusion Matrix - Random Forest Classifier', fontsize=14, fontweight='bold')
 plt.tight_layout()
-plt.savefig('outputs/confusion_matrix.png', dpi=300, bbox_inches='tight')
+plt.savefig('outputs/classification_analysis/confusion_matrix.png', dpi=300, bbox_inches='tight')
 plt.close()
 log_result("Confusion matrix saved to outputs/confusion_matrix.png")
 log_step("Generating confusion matrix", step_start)
@@ -179,7 +179,7 @@ for bar in bars:
              va='center', ha='left', fontsize=9)
 
 plt.tight_layout()
-plt.savefig('outputs\classification_analysis\Feature_importance_rf.png', dpi=300, bbox_inches='tight')
+plt.savefig('outputs/classification_analysis/Feature_importance_rf.png', dpi=300, bbox_inches='tight')
 plt.close()
 log_result("Feature importance plot saved to outputs/Feature_importance_rf.png")
 log_step("Visualizing feature importance", step_start)
@@ -219,14 +219,14 @@ plt.legend()
 plt.ylim(0, 1.1)
 plt.grid(axis='y', alpha=0.3)
 plt.tight_layout()
-plt.savefig('outputs/classification_performance_by_class.png', dpi=300, bbox_inches='tight')
+plt.savefig('outputs/classification_analysis/classification_performance_by_class.png', dpi=300, bbox_inches='tight')
 plt.close()
 log_result("Class performance plot saved to outputs/classification_performance_by_class.png")
 log_step("Generating detailed classification report", step_start)
 
 # Save results
 step_start = log_step("Saving classification results")
-with open('outputs\classification_analysis\classification_analysis_results.txt', 'w') as f:
+with open('outputs/classification_analysis/classification_analysis_results.txt', 'w') as f:
     f.write("CLASSIFICATION ANALYSIS RESULTS - RANDOM FOREST\n")
     f.write("="*70 + "\n\n")
     f.write(f"Analysis date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
@@ -260,7 +260,7 @@ with open('outputs\classification_analysis\classification_analysis_results.txt',
     f.write("3. The model validates the significance of regulatory factors in GPU pricing\n")
     f.write("4. Feature importance analysis confirms the three-way market interaction model\n")
 
-log_result("Results saved to outputs\classification_analysis\classification_analysis_results.txt")
+log_result("Results saved to outputs/classification_analysis/classification_analysis_results.txt")
 log_step("Saving classification results", step_start)
 
 # Summary

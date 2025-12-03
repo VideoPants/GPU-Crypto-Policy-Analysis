@@ -1,14 +1,14 @@
 REGRESSION ANALYSIS RESULTS - RIDGE REGRESSION
 ======================================================================
 
-Analysis date: 2025-12-02 13:01:12
+Analysis date: 2025-12-03 15:51:44
 Training samples: 1997, Test samples: 500
 
 MODEL PERFORMANCE METRICS:
   R square Score:  0.9978
   RMSE:      0.0260
   MAE:       0.0194
-  Mean CV R square: 0.9938 (ï¿½0.0068)
+  Mean CV R square: 0.9938 (±0.0068)
 
 TOP 10 FEATURE COEFFICIENTS:
 ----------------------------------------------------------------------

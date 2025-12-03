@@ -39,8 +39,8 @@ overall_start = time.time()
 
 # Load data
 step_start = log_step("Loading data")
-df_viz = pd.read_csv('data\processed\data_visualization_analysis.csv')
-df_ml = pd.read_csv('data\processed\data_machinelearning_clustering.csv')
+df_viz = pd.read_csv('data/processed/data_visualization_analysis.csv')
+df_ml = pd.read_csv('data/processed/data_machinelearning_clustering.csv')
 df_viz['Date'] = pd.to_datetime(df_viz['Date'])
 df_ml['Date'] = pd.to_datetime(df_ml['Date'])
 log_result(f"Visualization data: {df_viz.shape[0]} rows, {df_viz.shape[1]} columns")
@@ -115,9 +115,9 @@ ax2.axvline(x=optimal_k, color='r', linestyle='--', alpha=0.5, label=f'Optimal k
 ax2.legend()
 
 plt.tight_layout()
-plt.savefig('outputs\cluster_analysis\elbow_silhouette.png', dpi=300, bbox_inches='tight')
+plt.savefig('outputs/cluster_analysis/elbow_silhouette.png', dpi=300, bbox_inches='tight')
 plt.close()
-log_result("Elbow/silhouette plot saved to outputs\cluster_analysis\elbow_silhouette.png")
+log_result("Elbow/silhouette plot saved to outputs/cluster_analysis/elbow_silhouette.png")
 log_step("Generating elbow and silhouette plots", step_start)
 
 # Apply K-Means with optimal k
@@ -239,9 +239,9 @@ plt.scatter(centers_pca[:, 0], centers_pca[:, 1],
            c='red', s=200, marker='X', label='Cluster Centers', edgecolor='black')
 plt.legend()
 plt.tight_layout()
-plt.savefig('outputs\cluster_analysis\clustering_pca.png', dpi=300, bbox_inches='tight')
+plt.savefig('outputs/cluster_analysis/clustering_pca.png', dpi=300, bbox_inches='tight')
 plt.close()
-log_result("PCA clustering visualization saved to outputs\cluster_analysis\clustering_pca.png")
+log_result("PCA clustering visualization saved to outputs/cluster_analysis/clustering_pca.png")
 log_step("Generating PCA visualization", step_start)
 
 # Time series visualization
@@ -263,9 +263,9 @@ plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.grid(True, alpha=0.3)
 plt.xticks(rotation=45)
 plt.tight_layout()
-plt.savefig('outputs\cluster_analysis\clusters_over_time.png', dpi=300, bbox_inches='tight')
+plt.savefig('outputs/cluster_analysis/clusters_over_time.png', dpi=300, bbox_inches='tight')
 plt.close()
-log_result("Time series visualization saved to outputs\cluster_analysis\clusters_over_time.png")
+log_result("Time series visualization saved to outputs/cluster_analysis/clusters_over_time.png")
 log_step("Generating time series visualization", step_start)
 
 # Cluster radar chart for comparison
@@ -307,9 +307,9 @@ radar_features = ['GPU_Stock_Index', 'BTC_Price', 'ETH_Price',
 
 fig = create_radar_chart(cluster_summary, radar_features, 
                          f'Cluster Comparison (Normalized Features) - k={optimal_k}')
-plt.savefig('outputs\cluster_analysis\cluster_radar_chart.png', dpi=300, bbox_inches='tight')
+plt.savefig('outputs/cluster_analysis/cluster_radar_chart.png', dpi=300, bbox_inches='tight')
 plt.close()
-log_result("Radar chart saved to outputs\cluster_analysis\cluster_radar_chart.png")
+log_result("Radar chart saved to outputs/cluster_analysis/cluster_radar_chart.png")
 log_step("Generating cluster comparison radar chart", step_start)
 
 # Save clustered data
@@ -320,7 +320,7 @@ log_step("Saving clustered data", step_start)
 
 # Save clustering results
 step_start = log_step("Saving clustering analysis results")
-with open('outputs\cluster_analysis\clustering_analysis_results.txt', 'w') as f:
+with open('outputs/cluster_analysis/clustering_analysis_results.txt', 'w') as f:
     f.write("CLUSTERING ANALYSIS RESULTS - K-MEANS\n")
     f.write("="*70 + "\n\n")
     f.write(f"Analysis date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
@@ -350,7 +350,7 @@ with open('outputs\cluster_analysis\clustering_analysis_results.txt', 'w') as f:
     f.write("4. Military spending creates distinct clusters with unique market characteristics\n")
     f.write("5. The 7 clusters validate the existence of different market regimes over time\n")
 
-log_result("Results saved to outputs\cluster_analysis\clustering_analysis_results.txt")
+log_result("Results saved to outputs/cluster_analysis/clustering_analysis_results.txt")
 log_step("Saving clustering analysis results", step_start)
 
 # Summary

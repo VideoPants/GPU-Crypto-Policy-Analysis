@@ -1,7 +1,7 @@
 CLUSTERING ANALYSIS RESULTS - K-MEANS
 ======================================================================
 
-Analysis date: 2025-12-02 13:12:58
+Analysis date: 2025-12-03 15:48:27
 Optimal number of clusters: 2
 Total samples: 2497
 
